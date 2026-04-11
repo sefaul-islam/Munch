@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Fooddb
+    username: postgres
+    password: 1234
+  jpa:
+      hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
+server:
+  port: 8080
+  error:
+    include-message: always
